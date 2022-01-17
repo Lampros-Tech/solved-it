@@ -5,15 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gallery-solvedit</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sstyle.css">
+    <link rel="stylesheet" href="queries.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="gallerypagepart1">
    
-        <div class="gnavbar">
-         
-            <gnav>
-                <ul>
+    
+
+
+    
+    <!--------Header-------------------------------->
+    <header>
+        <nav>
+         <img src="logosi.png" class="logo">
+          <i class="fas fa-bars" id="ham-menu"></i>
+                <ul id="nav-bar">
                     <li> <a href="index.html">HOME</a></li>
                        <li><a href="services.html">SERVICES</a></li>
                        <li><a href="aboutus.html">ABOUT</a></li>
@@ -21,64 +34,108 @@
                      <li><a href="contact.html">CONTACT</a></li>
                     </ul>
 
-                </gnav>
+                </nav>
+     
+    </header>
+    <section class="gallery">
+
+        <h1>
+                 OUR <span style="color: #F8B317;"> GALLERY </span>
+        </h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore etd<br>olore magna aliqua. Ut enim ad minim venia
+
+        </p>
+        <div class="full-img" id="fullimgbox">
+            <img src="photo1.png" id="fullimg">
+            <span onclick="closefullimg()">X</span>
         </div>
-        <img src="logosi.png" class="logo1">
-        <div class="scontent">  
-            <h1>
-               SHOWCASING OUR <br> <span style="color:#F8B317;">GALLERY</span>.
-            </h1>
-
-            <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor 
-                incididunt ut labore etd<br>olore magna aliqua. Ut enim ad minim venia
-
-            </h4>
-        </div>
 
 
 
-
-        <div class="gallerybox">
+        <div class="img-gallery">
             
-            <div class="galleryrow">
+            <img src="photo1.png" onclick="openfullimg(this.src)">
+            <img src="photo2.png" onclick="openfullimg(this.src)">
+            <img src="photo3.png" onclick="openfullimg(this.src)">
+            <img src="photo4.png" onclick="openfullimg(this.src)">
+            <img src="photo5.png" onclick="openfullimg(this.src)">
+            <img src="photo6.png" onclick="openfullimg(this.src)">
+            <img src="photo1.png" onclick="openfullimg(this.src)">
+            <img src="photo2.png" onclick="openfullimg(this.src)">
+            
+        </div>
+    </section>
 
-                <div class="gallery-col">
-                            <img class="photoimg" src="photo1.png"> </div>
-
-                <div class="gallery-col">
-                             <img class="photoimg" src="photo2.png"> </div>
-                            
-                 <div class="gallery-col">
-                              <img class="photoimg" src="photo3.png"> </div>
-                   
-             </div>
-
-             <div class="galleryrow">
-
-                <div class="gallery-col">
-                            <img class="photoimg" src="photo4.png"> </div>
-
-                <div class="gallery-col">
-                             <img class="photoimg" src="photo5.png"> </div>
-                            
-                 <div class="gallery-col">
-                              <img class="photoimg" src="photo6.png"> </div>
-                   
-             </div>
-
-             <div class="gfooter">
-
-                <h1> copyright@solvedit</h1>
+    <footer>
+        <div class="row footer-about">
     
+            <h3>Solved It</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore etd olore magna aliqua. Ut enim ad minim venia
+            </p>
     
-              </div>
-
-
-
-
-
+            <div class="social-links">
+                <a href="#">
+                    <i class="fab fa-instagram"></i>   
+                 </a>
+    
+                 <a href="#">
+                    <i class="fab fa-facebook"></i>   
+                 </a>
+    
+                 <a href="#">
+                    <i class="fab fa-linkedin"></i>   
+                 </a>
+    
             </div>
+        </div>
+    
+        <div class="row footer-contact">
+            <div class="column">
+                <h4>Phone No.</h4>
+                  <p> +123 123 123 </p>
+            </div>
+    
+            <div class="column">
+                <h4>E-Mail.</h4>
+                  <p>solvedit@gmail.com</p>
+            </div>
+        </div>
+    
+        <p class="footer-copyright">
+            copyright &copy; 2021 SolvedIt | Created by Lampros-tech
+        </p>
+    
+    </footer>
+
+    <!-------------------------script------------------------------------->
+
+
+    <script>
+
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic){
+
+            fullimgbox.style.display ="flex";
+            fullimg.src = pic;
+        }       
+        
+        
+        function closefullimg(){
+
+            fullimgbox.style.display ="none";
+        }
+    </script>
+
+        <script src="script.js"></script>
+
+
 
 
 </body>

@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sstyle.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    
     <title>services</title>
 </head>
-<body>
-<section class="servicepagepart1">
-   
-    <div class="homepagepart1">
-        <div class="snavbar">
-            <snav>
-                <ul>
+ <!-------------------------------------Main Body------------------------------------>
+ <body>
+
+    <!--------Header-------------------------------->
+    <header>
+        <nav>
+         <img src="logosi.png" class="logo">
+          <i class="fas fa-bars" id="ham-menu"></i>
+                <ul id="nav-bar">
                     <li> <a href="index.html">HOME</a></li>
                        <li><a href="services.html">SERVICES</a></li>
                        <li><a href="aboutus.html">ABOUT</a></li>
@@ -21,29 +32,40 @@
                      <li><a href="contact.html">CONTACT</a></li>
                     </ul>
 
-                </snav>
-        </div>
-        <div class="scontent">
+                </nav>
+     
+    </header>
+       
 
-            <img src="logosi.png" class="logo1">
-            
+    <!--------Section-1-------------------------------->    
+    <section class="hero" id="home">
+        <img src="frame2solid.png" id="header-shape">
+        <div class="hero-content">
             <h1>
-                OUR<br> <span style="color:#F8B317;">SERVICES</span>.
+                OUR<br> <span> SERVICES</span>.
             </h1>
 
-            <h4>
-                Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor 
-                incididunt ut labore etd<br>olore magna aliqua. Ut enim ad minim venia
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor 
+                    incididunt ut labore etd<br>olore magna aliqua. Ut enim ad minim venia
 
-            </h4>
+                </p>
+
+                <div class="btn-container">
+                    <button class="primary-button btn">CONTACT US </button>
+             </div>
+
         </div>
-     
 
+            <div class="hero-img">
+            <img src="simg1.png">
 
-      <img src="imgs-1.png" class="img2">
-    
+        </div>
+    </section>
 
-            <div class="services2">
+<!--------Section-2--------------------------> 
+      <section class="services2">
+            <div class="ourservices">
                <img src="book.png" class="servimg">
                 <div class="content2">
                     <h2><span style="color: #F8B317">K12 Textbook Solutions -</span> <br> Video and Text </h2>
@@ -77,7 +99,7 @@
                 </div>    
             </div>
 
-            <div class="services3">
+            <div class="ourservices">
                 <img src="educational-book.png".png" class="servimg">
                  <div class="content2">
                      <h2><span style="color: #F8B317">Text and Videos solutions</span> <br>  for popular competitive examinations. </h2>
@@ -100,60 +122,102 @@
                     
                  </div>    
              </div>
-       
-            
-
-    
-          <div class="sreview">
-
-                <h2>What our <span style="color: #F8B317">students</span> <br>  have to say? </h2>
-
-                <div class="sreviewbox">
-                    <div class="roww">
-
-                        <div class="serv-col">
-                            <p> Videos provided by the Solved it team are Nice. 
-                            I like the examples and techniques used in the videos 
-                            to explain concept</p>
-
-                            <h2>
-                                Gurkeerat kaur <br>
-                           From Amrritsar, India
-                        
-                            </h2>
-
-                        </div>
-
-                        
-                        <div class="serv-col">
-                            <p> Videos provided by the Solved it team are Nice. 
-                            I like the examples and techniques used in the videos 
-                            to explain concept</p>
-
-                            <h2>
-                                Gurkeerat kaur <br>
-                           From Amrritsar, India
-                        
-                            </h2>
-
-                        </div>
-
-                    </div>
+        </section>
 
 
 
-                </div>
+  <!--------Section-3-------------------------->        
+
+        <section class="reviewsection">
+            <h2>
+                What our<span style="color:#000000;"> STUDENTS</span> have to say?</span>
+            </h2>
+
+            <p class="section-desc">
+
+                Any organisation, we believe, is the reflection of characters of the persons
+        that spearhead it with grit, dedication, commitment and passion.
+         Also, since we are all about developing educational content solutions, 
+        we are also equipped with all the required technical and technological
+        establishments.
+            </p>
+
+            <div class="row">
+
+                <div class="column">    
+                    <div class="reviews-img">   </div>
+                  
+                <p>Videos provided by the Solved it team are Nice. 
+                    I like the examples and techniques used in the 
+                    videos to explain concept.</p>
+                <h3>Gurkeerat kaur
+                    From Amrritsar, India</h3>
+             
             </div>
-           
 
-          <div class="sfooter">
+                <div class="column">    
+                    <div class="reviews-img"> </div>
+                  
+                    <p>Thank you sir for Making such wonderful
+                        to-the-point notes. It helped me to clear 
+                        all of my doubts and revice rapidly.</p>
+                   <h3> Dipti Patel
+                       From Ahmedabd, India</h3>
+                </div>
+                </div>
+</section>
 
-            <h1> copyright@solvedit</h1>
+
+<!--------Section-4-------------------------->    
 
 
-          </div>
-     
-        </section>  
+<footer>
+    <div class="row footer-about">
+
+        <h3>Solved It</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore etd olore magna aliqua. Ut enim ad minim venia
+        </p>
+
+        <div class="social-links">
+            <a href="#">
+                <i class="fab fa-instagram"></i>   
+             </a>
+
+             <a href="#">
+                <i class="fab fa-facebook"></i>   
+             </a>
+
+             <a href="#">
+                <i class="fab fa-linkedin"></i>   
+             </a>
+
+        </div>
+    </div>
+
+    <div class="row footer-contact">
+        <div class="column">
+            <h4>Phone No.</h4>
+              <p> +123 123 123 </p>
+        </div>
+
+        <div class="column">
+            <h4>E-Mail.</h4>
+              <p>solvedit@gmail.com</p>
+        </div>
+    </div>
+
+    <p class="footer-copyright">
+        copyright &copy; 2021 SolvedIt | Created by Lampros-tech
+    </p>
+
+</footer>
+
+<script src="script.js">
+
+</script>
+          
 
 
 </body>
